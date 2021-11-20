@@ -1,0 +1,29 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Contact {
+  id           String    @id @default(cuid())
+  name         String
+  email        String    @unique
+  messagesFrom Message[] @relation("sender")
+  messagesTo   Message[] @relation("reciever")
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Message {
+  id             String   @id @default(cuid())
+  messageContent String
+  senderId       String
+  recieverId     String   @unique
+  sender         Contact  @relation(name: "sender", fields: [senderId], references: [id])
+  reciever       Contact  @relation(name: "reciever", fields: [recieverId], references: [id])
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
