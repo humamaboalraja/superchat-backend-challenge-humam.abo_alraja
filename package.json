@@ -7,9 +7,15 @@
     "dev": "dotenv -e ./.env.local -- ts-node-dev --no-notify --respawn --transpile-only graphql/server.ts",
     "build": "tsc -p tsconfig.prod.json",
     "lint:fix": "eslint --fix .",
+    "test:watch": "dotenv -e .env.test jest --watch",
+    "test:api": "dotenv -e .env.test -- jest --config ./jest.config.ts --runInBand --force-exit",
+    "data:seed": "dotenv -e .env.test ts-node ./utils/executeSeed",
+    "data:reset": "dotenv -e .env.test ts-node ./utils/executeReset",
     "prisma:migrate": "dotenv -e .env.local prisma migrate dev",
     "prisma:generate": "dotenv -e .env.local prisma generate",
     "nexus:watch": "nodemon --exec 'yarn ts-node graphql/schema' --ext 'ts' --watch '*/graphql/**/*.ts' --ignore 'graphql/generated/schema.graphql'",
+    "docker:up": "docker-compose up -d --build",
+    "docker:down": "docker compose down"
   },
   "repository": {
     "type": "git",
@@ -23,6 +29,7 @@
   "homepage": "https://github.com/humamaboalraja/superchat-backend-challenge-humam.abo_alraja#readme",
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.2",
+    "@types/jest": "^26.0.24",
     "@types/node": "^16.4.1",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
@@ -31,6 +38,8 @@
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
+    "jest-mock-extended": "^1.0.18",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "prisma": "2.29.0",
