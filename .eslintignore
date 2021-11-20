@@ -1,0 +1,7 @@
+dist
+node_modules
+coverage
+graphql/generated/schema.graphql
+.env.development
+.env.test
+yarn.lock
