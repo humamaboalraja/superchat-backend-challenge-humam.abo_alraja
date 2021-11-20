@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres
+    container_name: superchat
+    restart: always
+    environment:
+      - POSTGRES_USER=superchat
+      - POSTGRES_PASSWORD=superchat
+    ports:
+      - '5439:5432'
