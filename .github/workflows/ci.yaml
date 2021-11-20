@@ -1,0 +1,21 @@
+name: Superchat's Server Testing CI pipeline
+
+on:
+  pull_request: {}
+
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+      - run: yarn docker:up
+      - run: yarn install
+      - run: yarn ci:prisma:migrate
+      - run: yarn ci:prisma:generate
