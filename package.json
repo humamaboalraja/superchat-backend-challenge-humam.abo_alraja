@@ -12,6 +12,8 @@
     "data:seed": "dotenv -e .env.test ts-node ./utils/executeSeed",
     "data:reset": "dotenv -e .env.test ts-node ./utils/executeReset",
     "prisma:migrate": "dotenv -e .env.local prisma migrate dev",
+    "ci:prisma:migrate": "prisma migrate dev",
+    "ci:prisma:generate": "prisma generate",
     "prisma:generate": "dotenv -e .env.local prisma generate",
     "nexus:watch": "nodemon --exec 'yarn ts-node graphql/schema' --ext 'ts' --watch '*/graphql/**/*.ts' --ignore 'graphql/generated/schema.graphql'",
     "docker:up": "docker-compose up -d --build",
