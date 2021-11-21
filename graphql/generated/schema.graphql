@@ -110,7 +110,6 @@ export interface NexusGenScalars {
 
 export interface NexusGenObjects {
   Contact: PrismaClient.Contact;
-  Message: PrismaClient.Message;
   Query: {};
 }
 
@@ -131,17 +130,9 @@ export interface NexusGenFieldTypes {
     name: string; // String!
     updatedAt: string; // String!
   };
-  Message: {
-    // field return type
-    createdAt: string; // String!
-    id: string; // String!
-    messageContent: string; // String!
-    senderId: string; // String!
-    updatedAt: string; // String!
-  };
   Query: {
     // field return type
-    ok: boolean; // Boolean!
+    listContacts: NexusGenRootTypes['Contact']; // Contact!
   };
 }
 
@@ -154,17 +145,9 @@ export interface NexusGenFieldTypeNames {
     name: 'String';
     updatedAt: 'String';
   };
-  Message: {
-    // field return type name
-    createdAt: 'String';
-    id: 'String';
-    messageContent: 'String';
-    senderId: 'String';
-    updatedAt: 'String';
-  };
   Query: {
     // field return type name
-    ok: 'Boolean';
+    listContacts: 'Contact';
   };
 }
 
