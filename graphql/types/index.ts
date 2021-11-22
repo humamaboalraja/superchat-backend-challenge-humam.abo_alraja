@@ -1,3 +1,3 @@
-export * from './resourcesTypes/Contact';
+export * from './resourcesTypes';
 // export * from './Mutations';
 export * from './Queries';
