@@ -21,7 +21,7 @@ model Message {
   id             String   @id @default(cuid())
   messageContent String
   senderId       String
-  recieverId     String   @unique
+  recieverId     String
   sender         Contact  @relation(name: "sender", fields: [senderId], references: [id])
   reciever       Contact  @relation(name: "reciever", fields: [recieverId], references: [id])
   createdAt      DateTime @default(now())
