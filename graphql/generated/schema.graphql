@@ -132,7 +132,7 @@ export interface NexusGenFieldTypes {
   };
   Query: {
     // field return type
-    listContacts: NexusGenRootTypes['Contact']; // Contact!
+    listContacts: NexusGenRootTypes['Contact'][]; // [Contact!]!
   };
 }
 
