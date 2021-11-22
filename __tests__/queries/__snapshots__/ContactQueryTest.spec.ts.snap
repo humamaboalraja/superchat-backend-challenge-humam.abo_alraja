@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Contact queries should list all contacts  1`] = `
+Object {
+  "data": Object {
+    "listContacts": Array [
+      Object {
+        "createdAt": "1637591323864",
+        "email": "humam@company.com",
+        "id": "ckwarlcd40000ncs7f4h9o7hz",
+        "name": "Humam Abo Alraja",
+        "updatedAt": "1637591323865",
+      },
+      Object {
+        "createdAt": "1637591323876",
+        "email": "john@company.com",
+        "id": "ckwarlcdg0007ncs7z78okzzj",
+        "name": "John",
+        "updatedAt": "1637591323877",
+      },
+      Object {
+        "createdAt": "1637591323883",
+        "email": "emma@company.com",
+        "id": "ckwarlcdn0014ncs7xzqvi1ii",
+        "name": "Emma Mockassin",
+        "updatedAt": "1637591323883",
+      },
+      Object {
+        "createdAt": "1637591323890",
+        "email": "alex@company.com",
+        "id": "ckwarlcdu0021ncs7jco1k8ld",
+        "name": "Alex Smith",
+        "updatedAt": "1637591323890",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
