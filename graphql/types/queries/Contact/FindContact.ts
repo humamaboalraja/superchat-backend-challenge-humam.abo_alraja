@@ -6,7 +6,7 @@ export const FindContact = extendType({
   definition(t) {
     t.field('findContact', {
       type: 'Contact',
-      description: 'Find a Contact by their email',
+      description: 'Find a Contact given their email',
       args: { email: stringArg() },
       resolve: async (_, args, ctx: Context) => {
         if (!args.email) {
