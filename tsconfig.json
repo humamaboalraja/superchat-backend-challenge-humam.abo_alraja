@@ -18,6 +18,7 @@
     "noImplicitAny": false /* Raise error on expressions and declarations with an implied 'any' type. */,
     /* Module Resolution Options */
     "noImplicitReturns": true,
+    "types": ["node", "jest"],
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
     "resolveJsonModule": true,
     "isolatedModules": true,
