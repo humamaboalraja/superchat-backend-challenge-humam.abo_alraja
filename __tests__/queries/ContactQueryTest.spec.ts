@@ -13,11 +13,8 @@ describe('Test Contact queries', () => {
   const CONTACTS_QUERY = `
   query Query {
    listContacts {
-     id
      name
      email
-     createdAt
-     updatedAt
    }
  }
 `;

@@ -5,32 +5,20 @@ Object {
   "data": Object {
     "listContacts": Array [
       Object {
-        "createdAt": "1637608880516",
         "email": "humam@company.com",
-        "id": "ckwb21n5w00005ahfz1m95tw3",
         "name": "Humam Abo Alraja",
-        "updatedAt": "1637608880517",
       },
       Object {
-        "createdAt": "1637608880533",
         "email": "john@company.com",
-        "id": "ckwb21n6d00075ahf91w78jho",
         "name": "John",
-        "updatedAt": "1637608880534",
       },
       Object {
-        "createdAt": "1637608880544",
         "email": "emma@company.com",
-        "id": "ckwb21n6o00145ahfgq0czj9i",
         "name": "Emma Mockassin",
-        "updatedAt": "1637608880544",
       },
       Object {
-        "createdAt": "1637608880554",
         "email": "alex@company.com",
-        "id": "ckwb21n6y00215ahfmoxtixjs",
         "name": "Alex Smith",
-        "updatedAt": "1637608880555",
       },
     ],
   },
