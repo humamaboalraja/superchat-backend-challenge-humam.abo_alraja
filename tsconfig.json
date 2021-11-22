@@ -36,6 +36,6 @@
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
-  "include": ["graphql", "**/*.ts", "**/*.tsx", "next.env.d.ts"],
+  "include": ["graphql", "**/*.ts", "**/**/*.ts", "**/*.tsx", "next.env.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
