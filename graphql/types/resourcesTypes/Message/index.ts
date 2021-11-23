@@ -6,6 +6,7 @@ export const Message = objectType({
     t.string('id');
     t.string('messageContent');
     t.string('senderId');
+    t.string('recieverId');
     t.string('createdAt');
     t.string('updatedAt');
   },
