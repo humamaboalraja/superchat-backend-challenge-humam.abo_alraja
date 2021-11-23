@@ -1,4 +1,4 @@
-import { prisma } from '../singletons/prisma';
+import { prisma } from '../../singletons/prisma';
 
 export default async function reset() {
   try {

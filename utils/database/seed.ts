@@ -1,5 +1,4 @@
-import cryptoRandomString from 'crypto-random-string';
-import { prisma } from '../singletons/prisma';
+import { prisma } from '../../singletons/prisma';
 
 export default async function seed() {
   try {
