@@ -1,6 +1,6 @@
-import getGlobalData from '../../utils/getGlobalData';
-import reset from '../../utils/reset';
-import seed from '../../utils/seed';
+import getGlobalData from '../../utils/database/getGlobalData';
+import reset from '../../utils/database/reset';
+import seed from '../../utils/database/seed';
 import server from '../server';
 
 beforeAll(async () => {
@@ -24,7 +24,6 @@ describe('Test find contact query', () => {
       query: FIND_CONTACT_QUERY,
       variables: { email: global.testData.contacts[0].email },
     });
-    console.log(global.testData.contacts[0].email);
     expect(res).toMatchSnapshot();
   });
 
