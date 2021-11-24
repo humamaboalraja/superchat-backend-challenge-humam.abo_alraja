@@ -97,6 +97,12 @@ export interface NexusGenInputs {
     email: string; // String!
     name: string; // String!
   };
+  SendMessageInput: {
+    // input type
+    messageContent: string; // String!
+    recieverId: string; // String!
+    senderId: string; // String!
+  };
 }
 
 export interface NexusGenEnums {}
@@ -150,6 +156,7 @@ export interface NexusGenFieldTypes {
   Mutation: {
     // field return type
     addContact: NexusGenRootTypes['Contact']; // Contact!
+    sendMessage: NexusGenRootTypes['Message']; // Message!
   };
   Query: {
     // field return type
@@ -179,6 +186,7 @@ export interface NexusGenFieldTypeNames {
   Mutation: {
     // field return type name
     addContact: 'Contact';
+    sendMessage: 'Message';
   };
   Query: {
     // field return type name
@@ -192,6 +200,10 @@ export interface NexusGenArgTypes {
     addContact: {
       // args
       InputType?: NexusGenInputs['CreateContactInput'] | null; // CreateContactInput
+    };
+    sendMessage: {
+      // args
+      InputType?: NexusGenInputs['SendMessageInput'] | null; // SendMessageInput
     };
   };
   Query: {
