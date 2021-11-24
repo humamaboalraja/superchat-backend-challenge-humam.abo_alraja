@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test find contact query should list previous messages between two contacts 1`] = `
+Object {
+  "data": Object {
+    "listPreviousMessages": Array [
+      Object {
+        "messageContent": "Hey Emma, How is it going?!",
+        "recieverId": "ckwdfh74e0014t5hfv8sf5lfe",
+        "senderId": "ckwdfh71d0000t5hfrman1lvo",
+      },
+      Object {
+        "messageContent": "Hi Humam, it's going great! How about you?",
+        "recieverId": "ckwdfh71d0000t5hfrman1lvo",
+        "senderId": "ckwdfh74e0014t5hfv8sf5lfe",
+      },
+      Object {
+        "messageContent": "Hey Alex, do you mind sending me the pitch ASAP? Thanks in advance!",
+        "recieverId": "ckwdfh76r0021t5hfxy22j582",
+        "senderId": "ckwdfh74e0014t5hfv8sf5lfe",
+      },
+      Object {
+        "messageContent": "Hi Emma, Definitely!",
+        "recieverId": "ckwdfh74e0014t5hfv8sf5lfe",
+        "senderId": "ckwdfh76r0021t5hfxy22j582",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

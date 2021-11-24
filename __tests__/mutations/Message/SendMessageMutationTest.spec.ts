@@ -1,4 +1,3 @@
-import { Message } from '.prisma/client';
 import { prisma } from '../../../singletons/prisma';
 import getGlobalData from '../../../utils/database/getGlobalData';
 import reset from '../../../utils/database/reset';
@@ -27,10 +26,9 @@ describe('Sending a message mutations Tests', () => {
   };
 
   it('should send a message', async () => {
-    const contact = global.testData.contacts.filter(
-      c => c.id === 'ckwc2uheg0000ithfmy9079g0'
-    );
-
+    // TODO - Creating two contacts
+    // TODO - Sending messages between contacts
+    // TODO - Retrieving sent messages
     const res = await server.executeOperation({
       query: SEND_MESSAGE_MUTATION,
       variables: {
@@ -42,10 +40,10 @@ describe('Sending a message mutations Tests', () => {
         },
       },
     });
-    console.log(res);
     const message = await prisma.message.findMany({
       where: {
         senderId: 'ckwcm9hzf0000y5hfp8p74h7e',
+        recieverId: 'ckwcm9hzf0000y5hfp8p74h7e',
       },
     });
     if (!message) throw new Error('Error fetching the sent message');
