@@ -1,7 +1,7 @@
-import getGlobalData from '../../utils/database/getGlobalData';
-import reset from '../../utils/database/reset';
-import seed from '../../utils/database/seed';
-import server from '../server';
+import getGlobalData from '../../../utils/database/getGlobalData';
+import reset from '../../../utils/database/reset';
+import seed from '../../../utils/database/seed';
+import server from '../../server';
 
 beforeAll(async () => {
   await reset();

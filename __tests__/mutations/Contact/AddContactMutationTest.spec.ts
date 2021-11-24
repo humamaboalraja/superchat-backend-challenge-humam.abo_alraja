@@ -1,8 +1,8 @@
-import { prisma } from '../../singletons/prisma';
-import getGlobalData from '../../utils/database/getGlobalData';
-import reset from '../../utils/database/reset';
-import seed from '../../utils/database/seed';
-import server from '../server';
+import { prisma } from '../../../singletons/prisma';
+import getGlobalData from '../../../utils/database/getGlobalData';
+import reset from '../../../utils/database/reset';
+import seed from '../../../utils/database/seed';
+import server from '../../server';
 describe('Test contact mutations', () => {
   beforeAll(async () => {
     await reset();
