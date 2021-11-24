@@ -1,3 +1,3 @@
 export * from './resourcesTypes';
-export * from './Mutations';
-export * from './Queries';
+export * from './mutations';
+export * from './queries';
