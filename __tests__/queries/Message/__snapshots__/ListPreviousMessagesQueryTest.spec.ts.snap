@@ -6,59 +6,23 @@ Object {
     "listPreviousMessages": Array [
       Object {
         "messageContent": "Hey Emma, How is it going?!",
-        "recieverId": "ckwdezujm00141nhfk69tztox",
-        "senderId": "ckwdezuix00001nhfwb1negih",
+        "recieverId": "ckwdfh74e0014t5hfv8sf5lfe",
+        "senderId": "ckwdfh71d0000t5hfrman1lvo",
       },
       Object {
         "messageContent": "Hi Humam, it's going great! How about you?",
-        "recieverId": "ckwdezuix00001nhfwb1negih",
-        "senderId": "ckwdezujm00141nhfk69tztox",
+        "recieverId": "ckwdfh71d0000t5hfrman1lvo",
+        "senderId": "ckwdfh74e0014t5hfv8sf5lfe",
       },
       Object {
         "messageContent": "Hey Alex, do you mind sending me the pitch ASAP? Thanks in advance!",
-        "recieverId": "ckwdezujv00211nhfdhv4wnmx",
-        "senderId": "ckwdezujm00141nhfk69tztox",
+        "recieverId": "ckwdfh76r0021t5hfxy22j582",
+        "senderId": "ckwdfh74e0014t5hfv8sf5lfe",
       },
       Object {
         "messageContent": "Hi Emma, Definitely!",
-        "recieverId": "ckwdezujm00141nhfk69tztox",
-        "senderId": "ckwdezujv00211nhfdhv4wnmx",
-      },
-    ],
-  },
-  "errors": undefined,
-  "extensions": undefined,
-  "http": Object {
-    "headers": Headers {
-      Symbol(map): Object {},
-    },
-  },
-}
-`;
-
-exports[`Test find contact query should not find previous messages between two contacts if no arguments are passed in 1`] = `
-Object {
-  "data": Object {
-    "listPreviousMessages": Array [
-      Object {
-        "messageContent": "Hey Emma, How is it going?!",
-        "recieverId": "ckwdezujm00141nhfk69tztox",
-        "senderId": "ckwdezuix00001nhfwb1negih",
-      },
-      Object {
-        "messageContent": "Hi Humam, it's going great! How about you?",
-        "recieverId": "ckwdezuix00001nhfwb1negih",
-        "senderId": "ckwdezujm00141nhfk69tztox",
-      },
-      Object {
-        "messageContent": "Hey Alex, do you mind sending me the pitch ASAP? Thanks in advance!",
-        "recieverId": "ckwdezujv00211nhfdhv4wnmx",
-        "senderId": "ckwdezujm00141nhfk69tztox",
-      },
-      Object {
-        "messageContent": "Hi Emma, Definitely!",
-        "recieverId": "ckwdezujm00141nhfk69tztox",
-        "senderId": "ckwdezujv00211nhfdhv4wnmx",
+        "recieverId": "ckwdfh74e0014t5hfv8sf5lfe",
+        "senderId": "ckwdfh76r0021t5hfxy22j582",
       },
     ],
   },
