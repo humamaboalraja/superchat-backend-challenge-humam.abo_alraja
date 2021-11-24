@@ -76,7 +76,7 @@ You can now visit `http://localhost:5000/graphql` for the playground.
 
 <br>
 
-## **Testing & CI Pieplines** 🧪
+## **🧪 Testing & CI Pieplines**
 
 > All tests run in CI on pull request events
 
@@ -95,7 +95,7 @@ Different options are available for testing the server, you can run:
 
 
 
-## **Types, Queries, and Mutations** 🗂
+## **🗂 Types, Queries, and Mutations** 
 
 Data Types, Queries, and Mutations are defined in the `./graphql/types/` folder. Since i used a code-first approach, everything is defined with the nexus  library using `objectType` and `extendType`.
 
