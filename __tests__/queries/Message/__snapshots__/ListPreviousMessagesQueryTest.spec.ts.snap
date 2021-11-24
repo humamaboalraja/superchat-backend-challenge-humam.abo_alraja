@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test find contact query should list previous messages between two contacts 1`] = `
+Object {
+  "data": Object {
+    "listPreviousMessages": Array [
+      Object {
+        "messageContent": "Hey Emma, How is it going?!",
+        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "senderId": "ckwdeqy700000eyhf3lavkba0",
+      },
+      Object {
+        "messageContent": "Hi Humam, it's going great! How about you?",
+        "recieverId": "ckwdeqy700000eyhf3lavkba0",
+        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+      },
+      Object {
+        "messageContent": "Hey Alex, do you mind sending me the pitch ASAP? Thanks in advance!",
+        "recieverId": "ckwdeqy860021eyhfhxdav7j3",
+        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+      },
+      Object {
+        "messageContent": "Hi Emma, Definitely!",
+        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "senderId": "ckwdeqy860021eyhfhxdav7j3",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Test find contact query should not find previous messages between two contacts if no arguments are passed in 1`] = `
+Object {
+  "data": Object {
+    "listPreviousMessages": Array [
+      Object {
+        "messageContent": "Hey Emma, How is it going?!",
+        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "senderId": "ckwdeqy700000eyhf3lavkba0",
+      },
+      Object {
+        "messageContent": "Hi Humam, it's going great! How about you?",
+        "recieverId": "ckwdeqy700000eyhf3lavkba0",
+        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+      },
+      Object {
+        "messageContent": "Hey Alex, do you mind sending me the pitch ASAP? Thanks in advance!",
+        "recieverId": "ckwdeqy860021eyhfhxdav7j3",
+        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+      },
+      Object {
+        "messageContent": "Hi Emma, Definitely!",
+        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "senderId": "ckwdeqy860021eyhfhxdav7j3",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
