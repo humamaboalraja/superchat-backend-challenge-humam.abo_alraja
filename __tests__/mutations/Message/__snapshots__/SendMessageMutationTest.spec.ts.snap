@@ -2,10 +2,14 @@
 
 exports[`Sending a message mutations Tests should send a message 1`] = `
 Object {
-  "data": null,
-  "errors": Array [
-    [GraphQLError: Cannot return null for non-nullable field Message.senderId.],
-  ],
+  "data": Object {
+    "sendMessage": Object {
+      "messageContent": "sdfadsfs",
+      "recieverId": "ckwdeztmj00141chf6rqlxv8f",
+      "senderId": "ckwdeztm900071chfsi1fz8hv",
+    },
+  },
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {

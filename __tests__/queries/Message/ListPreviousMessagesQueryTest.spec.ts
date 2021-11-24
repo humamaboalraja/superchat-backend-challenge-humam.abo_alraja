@@ -34,7 +34,10 @@ describe('Test find contact query', () => {
   it('should not find previous messages between two contacts if no arguments are passed in', async () => {
     const res = await server.executeOperation({
       query: LIST_PREVIOUS_MESSAGES_QUERY,
-      variables: {},
+      variables: {
+        one: '',
+        two: '',
+      },
     });
     expect(res).toMatchSnapshot();
   });

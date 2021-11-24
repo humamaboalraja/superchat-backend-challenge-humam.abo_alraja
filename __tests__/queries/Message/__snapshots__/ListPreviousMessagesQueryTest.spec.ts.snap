@@ -6,23 +6,23 @@ Object {
     "listPreviousMessages": Array [
       Object {
         "messageContent": "Hey Emma, How is it going?!",
-        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
-        "senderId": "ckwdeqy700000eyhf3lavkba0",
+        "recieverId": "ckwdezujm00141nhfk69tztox",
+        "senderId": "ckwdezuix00001nhfwb1negih",
       },
       Object {
         "messageContent": "Hi Humam, it's going great! How about you?",
-        "recieverId": "ckwdeqy700000eyhf3lavkba0",
-        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "recieverId": "ckwdezuix00001nhfwb1negih",
+        "senderId": "ckwdezujm00141nhfk69tztox",
       },
       Object {
         "messageContent": "Hey Alex, do you mind sending me the pitch ASAP? Thanks in advance!",
-        "recieverId": "ckwdeqy860021eyhfhxdav7j3",
-        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "recieverId": "ckwdezujv00211nhfdhv4wnmx",
+        "senderId": "ckwdezujm00141nhfk69tztox",
       },
       Object {
         "messageContent": "Hi Emma, Definitely!",
-        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
-        "senderId": "ckwdeqy860021eyhfhxdav7j3",
+        "recieverId": "ckwdezujm00141nhfk69tztox",
+        "senderId": "ckwdezujv00211nhfdhv4wnmx",
       },
     ],
   },
@@ -42,23 +42,23 @@ Object {
     "listPreviousMessages": Array [
       Object {
         "messageContent": "Hey Emma, How is it going?!",
-        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
-        "senderId": "ckwdeqy700000eyhf3lavkba0",
+        "recieverId": "ckwdezujm00141nhfk69tztox",
+        "senderId": "ckwdezuix00001nhfwb1negih",
       },
       Object {
         "messageContent": "Hi Humam, it's going great! How about you?",
-        "recieverId": "ckwdeqy700000eyhf3lavkba0",
-        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "recieverId": "ckwdezuix00001nhfwb1negih",
+        "senderId": "ckwdezujm00141nhfk69tztox",
       },
       Object {
         "messageContent": "Hey Alex, do you mind sending me the pitch ASAP? Thanks in advance!",
-        "recieverId": "ckwdeqy860021eyhfhxdav7j3",
-        "senderId": "ckwdeqy7w0014eyhf3jnv7r22",
+        "recieverId": "ckwdezujv00211nhfdhv4wnmx",
+        "senderId": "ckwdezujm00141nhfk69tztox",
       },
       Object {
         "messageContent": "Hi Emma, Definitely!",
-        "recieverId": "ckwdeqy7w0014eyhf3jnv7r22",
-        "senderId": "ckwdeqy860021eyhfhxdav7j3",
+        "recieverId": "ckwdezujm00141nhfk69tztox",
+        "senderId": "ckwdezujv00211nhfdhv4wnmx",
       },
     ],
   },
