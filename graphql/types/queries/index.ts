@@ -1,2 +1,2 @@
 export * from './contact';
-// export * from './Message';
+export * from './message';
