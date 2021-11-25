@@ -1,7 +1,8 @@
 
 <div align="center">
 
-![](./.github/assets/images/cover.svg)
+  
+  <img src="./.github/assets/images/cover.svg" width="100%"/>
 
 </div>
 
@@ -54,7 +55,8 @@ The result of this implementation is [GraphQL](https://graphql.org/) [Apollo ser
 ## **🧱 Tech Stack**
 To build this service i used following tech stack
 
-![](.github/assets/images/tech-stack.svg)
+
+<img src=".github/assets/images/tech-stack.svg" width="100%"/>
 
 
 
@@ -463,7 +465,9 @@ The challenge's database is implemented in naive approach due to some time const
 
 <div align="center">
 
-![](.github/assets/images/database-schema.svg)
+
+  
+<img src=".github/assets/images/database-schema.svg" width="100%"/>
 </div>
 
 ---
