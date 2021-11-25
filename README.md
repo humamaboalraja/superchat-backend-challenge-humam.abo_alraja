@@ -27,6 +27,10 @@ Users should be able to do the following:
 - [x] Send a message to a contact #9
 - [x] List all previous conversations #5
 - [x] Get contact with a given email #7
+- [ ] Substituting `messageContent` value when calling `sendMessage`, `reciecveMessage` mutations
+  - [ ] Building Bitcoin utility class to get Bitcoin's latest price
+  - [ ] Adding support to [name, bitcoin] placeholders in `messageContent` request field
+  - [ ] replacing [`name`, `bitcoin`] placeholders on request with the `contact.name` and `BitcoinData.getPrice()` result
 - [ ] Receive messages from an external service via a webhook
   
   ---
@@ -43,7 +47,7 @@ Users should be able to do the following:
 
 ## **💫 Implementation**
 
-The result of this implementation is [GraphQL](https://graphql.org/) [Apollo server](https://www.apollographql.com/docs/apollo-server/#:~:text=Apollo%20Server%20is%20an%20open,use%20data%20from%20any%20source.) that relies on [Nexus Schema](https://nexusjs.org) to code-first generate its schema and make it type-safe to effeciently use it in TypeScript, and the ORM of choise was [Prisma](https://www.prisma.io/) which is interacting with Postgres instance that is running on Docker.
+The result of this implementation is [GraphQL](https://graphql.org/) [Apollo server](https://www.apollographql.com/docs/apollo-server/#:~:text=Apollo%20Server%20is%20an%20open,use%20data%20from%20any%20source.) that relies on [Nexus Schema](https://nexusjs.org) to code-first generate its schema and make it type-safe to efficiently use it in TypeScript, and the ORM of choice was [Prisma](https://www.prisma.io/) which is interacting with Postgres instance that is running on Docker.
 
 <br>
 
@@ -327,7 +331,7 @@ Response:  ✅
 
 ## **Mutations**
 
-Mutation are used to perform operation on our GraphQl resources
+Mutation are used to perform operation on our GraphQL resources
 
 > Input types aren't listed in this table, you can find them in teh Apollo Sanbox
 
@@ -453,7 +457,7 @@ Response: CREATED ✅
 
 ## **💽 Database Schema model**
 
-The challenge's database is implemented in naive approach due to some time constraints, and we can exponenetially improve it by Nomralizing the relationship between the messages and contacts.
+The challenge's database is implemented in naive approach due to some time constraints, and we can exponentially improve it by Nomralizing the relationship between the messages and contacts.
 
 <br>
 
