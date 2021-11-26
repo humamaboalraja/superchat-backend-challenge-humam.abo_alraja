@@ -28,10 +28,12 @@ Users should be able to do the following:
 - [x] Send a message to a contact #9
 - [x] List all previous conversations #5
 - [x] Get contact with a given email #7
-- [ ] Substituting `messageContent` value when calling `sendMessage`, `reciecveMessage` mutations
-  - [ ] Building Bitcoin utility class to get Bitcoin's latest price
-  - [ ] Adding support to [name, bitcoin] placeholders in `messageContent` request field
-  - [ ] replacing [`name`, `bitcoin`] placeholders on request with the `contact.name` and `BitcoinData.getPrice()` result
+- [x] Substituting `messageContent` value when calling `sendMessage` mutation
+  - [x] Matching values that exist inside angle brackets using regex
+  - [x] Implmenent`replaceStringWithArrayValues()` function that accepts `sourceString` string, and an array of `replacements` and returns one string with all replacements
+  - [x] Building Bitcoin utility class to get Bitcoin's latest price
+  - [x] Adding support to [name, email, bitcoin] placeholders in `messageContent` request field
+  - [x] replacing [`name`, `email`, `bitcoin`] placeholders on request with the `contact.name`, `contact.email` and `BitcoinData.getPrice()`
 - [ ] Receive messages from an external service via a webhook
   
   ---
