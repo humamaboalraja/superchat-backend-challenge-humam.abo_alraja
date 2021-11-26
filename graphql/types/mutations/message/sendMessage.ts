@@ -42,7 +42,7 @@ export const sendMessage = extendType({
           const substitutedMessageContents = replaceStringWithArrayValues(
             args.messageContent,
             {
-              btc: bitcoinPrice,
+              bitcoin: bitcoinPrice,
               name: contactData[0].name,
               email: contactData[0].email,
             }
