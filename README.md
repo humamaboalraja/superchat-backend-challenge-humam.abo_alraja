@@ -407,10 +407,6 @@ Response: CREATED ✅
 
 <br>
 
-TODO:
-  - [ ] Building Bitcoing API interface
-  - [ ] Mapping through `messageContent` and substituting name & price value
-
 Mutation:
 
 ```graphql
@@ -428,11 +424,20 @@ mutation AddContact($inputType: SendMessageInput) {
 
 Variables:
 
+- Placeholders must be wrapped between <> to substitute it.
+- Placeholder that can used:
+  - bitcoin: return value `getBTCData()`; 
+  - Return latest bitcoin USD fiat price
+  - name: Fetches the contact name by their `recieverId`;
+  - email: Fetches the contact email by their `recieverId`.
+
+
 ```json
 {
   "inputType": {
-    "name": "Humam Abo Alraja",
-    "email": "humam@service.com"
+    "senderId": "ckwfv76bo0000p0hfkxup8erz",
+    "recieverId": "ckwfv76c50014p0hfhaafi2gy",
+    "messageContent": "Hey <name>, i just heard that Bitcoin's price exceeded <bitcoin> today!"
   }
 }
 ```
@@ -443,12 +448,11 @@ Response: CREATED ✅
 {
   "data": {
     "sendMessage": {
-      "id": "ckwdjfr220031rchfmouabh0a",
-      "senderId": "ckwdfh76r0021t5hfxy22j582",
-      "recieverId": "ckwdfh74e0014t5hfv8sf5lfe",
-      "messageContent": "Hey Emma!",
-      "createdAt": "1637759024570",
-      "updatedAt": "1637759024571"
+      "id": "ckwfwau600019w7hf101yj9cr",
+      "senderId": "ckwfv76bo0000p0hfkxup8erz",
+      "recieverId": "ckwfv76c50014p0hfhaafi2gy",
+      "messageContent": "Hey Emma, i just heard that Bitcoin's price exceeded 57,837.47$ today!",
+      "createdAt": "1637901562680"
     }
   }
 }
