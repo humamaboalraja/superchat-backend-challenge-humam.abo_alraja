@@ -1,6 +1,7 @@
 import { extendType, inputObjectType } from 'nexus';
 import { Context } from '../../../context';
-
+import getBTCData from '../../../../utils/application/BitcoinData';
+import replaceStringWithArrayValues from '../../../../utils/application/Strings';
 const InputType = inputObjectType({
   name: 'SendMessageInput',
   description: 'Message input',
@@ -27,11 +28,31 @@ export const sendMessage = extendType({
         });
 
         if (senderData) {
+
+          // Fetch Bitcoin latest price
+          const bitcoinPrice = await getBTCData();
+
+          // Find contact details that matches `args.recieverId`
+          const contactData = await ctx.prisma.contact.findMany({
+            where: {
+              id: args.recieverId,
+            },
+          });
+
+          const substitutedMessageContents = replaceStringWithArrayValues(
+            args.messageContent,
+            {
+              btc: bitcoinPrice,
+              name: contactData[0].name,
+              email: contactData[0].email,
+            }
+          );
+
           const payload = {
             data: {
               senderId: args.senderId,
               recieverId: args.recieverId,
-              messageContent: args.messageContent,
+              messageContent: substitutedMessageContents,
             },
           };
           message = await ctx.prisma.message.create(payload);
