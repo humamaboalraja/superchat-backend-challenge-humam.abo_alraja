@@ -34,7 +34,7 @@ Users should be able to do the following:
   - [x] Building Bitcoin utility class to get Bitcoin's latest price
   - [x] Adding support to [name, email, bitcoin] placeholders in `messageContent` request field
   - [x] replacing [`name`, `email`, `bitcoin`] placeholders on request with the `contact.name`, `contact.email` and `BitcoinData.getPrice()`
-- [ ] Receive messages from an external service via a webhook
+- [x] Receive messages from an external service via a webhook
   
   ---
 
